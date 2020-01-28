@@ -1,6 +1,9 @@
 <?php 
 require_once("controllers/navegacion.php");
 session_start();
+if(empty($_SESSION['usuario'])){
+  header("location:login.php");
+}
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,8 +25,15 @@ session_start();
 <body>
 
 <div class="container">
+
+<!-- logo -->
+<center class="mt-4">
+<img src="assets/images/gesiline.jpg" alt="logo" width="250">
+</center>
+
+<!-- fin logo -->
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-2">
   <a class="navbar-brand" href="index.php" >Gesiline</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,12 +53,12 @@ session_start();
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          usuario
+          <?=$_SESSION['usuario'];?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">perfil</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Salir</a>
+          <a class="dropdown-item" href="controllers/logoutController.php?y=1">Salir</a>
         </div>
       </li>
     </ul>

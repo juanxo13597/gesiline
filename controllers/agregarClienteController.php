@@ -1,5 +1,6 @@
 <?php
-require_once("models/agregarClienteModel.php");
+require_once("db/db.php");
+
 
 
 if(isset($_POST['nombre']) && isset($_POST['direccion']) && isset($_POST['telefono'])){
