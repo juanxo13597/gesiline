@@ -1,9 +1,10 @@
 <?php
-require_once("models/inicioModels.php");
+require_once("models/inicioModel.php");
+$data = "";
 
 if($resultado->num_rows>0){
     while($row = $resultado->fetch_assoc()){
-        $data = "<tr>
+        $data .= "<tr>
         <td>".$row['id']."</td>
         <td>".$row['nombre']."</td>
         <td>".$row['direccion']."</td>
@@ -20,6 +21,6 @@ if($resultado->num_rows>0){
 }
 
 
-require_once("views/inicioViews.php");
+require_once("views/inicioView.php");
 ?>
 
