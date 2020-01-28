@@ -15,6 +15,7 @@ if(empty($_SESSION['usuario'])){
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- js -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -75,7 +76,7 @@ if(empty($_SESSION['usuario'])){
 </nav>
 <!-- fin navbar -->
 
-<div class="border">
+<div class="border border-primary" id="content">
     <?php 
     if(!empty($_GET)){
       $get = $_GET['p'];

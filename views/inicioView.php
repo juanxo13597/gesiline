@@ -1,6 +1,6 @@
-<div class="pt-3 pb-3">
-<table class="table" id="clientes">
-    <thead>
+<div class="p-3">
+<table class="table table-hover" id="clientes">
+    <thead class="thead-light">
         <tr>
             <th scope="col">Id</th>
             <th scope="col">Nombre</th>
