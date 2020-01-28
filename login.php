@@ -22,6 +22,7 @@ if(isset($_GET['e'])){
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- js -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -37,7 +38,7 @@ if(isset($_GET['e'])){
 </center>
 
 <div class="border border-primary col-md-3 ml-auto mr-auto mt-2"></div>
-<div class="border border-primary col-md-3 ml-auto mr-auto pt-1">
+<div class="border border-primary col-md-3 ml-auto mr-auto pt-1" id="content">
 <?=$messageError?>
 <form action="controllers/loginController.php" method="post">
 
