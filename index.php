@@ -56,7 +56,14 @@ session_start();
 <!-- fin navbar -->
 
 <div class="border">
-    <?php require_once(navegacion($_GET['p'])); ?>
+    <?php 
+    if(!empty($_GET)){
+      $get = $_GET['p'];
+    }else{
+      $get = null;
+    }
+    require_once(navegacion($get)); 
+    ?>
 </div>
 
 
