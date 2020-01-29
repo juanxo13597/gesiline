@@ -1,6 +1,6 @@
 $(document).ready( function () {
-    $('#clientes').DataTable(
-        {
+
+    $('#clientes').DataTable({
         "language": {
             "url": "assets/js/datatablespain.json"
         },
