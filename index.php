@@ -28,9 +28,10 @@ if(empty($_SESSION['usuario'])){
 <div class="container">
 
 <!-- logo -->
-<center class="mt-4">
-<img src="assets/images/gesiline.jpg" alt="logo" width="250">
-</center>
+<div class="mt-4"><center>
+  <a href="index.php" class="j-logo"><img src="assets/images/gesiline.jpg" alt="logo" width="250"></a>
+</center></div>
+
 
 <!-- fin logo -->
 <!-- navbar -->
@@ -42,16 +43,24 @@ if(empty($_SESSION['usuario'])){
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.php">Inicio</a>
-      </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Clientes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="index.php">Ver</a>
           <a class="dropdown-item" href="?p=agregarCliente">Agregar</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Incidencias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Ver</a>
+          <a class="dropdown-item" href="#">Agregar</a>
         </div>
       </li>
 

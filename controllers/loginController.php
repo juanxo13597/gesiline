@@ -4,8 +4,9 @@ session_start();
 if(isset($_POST['user']) && isset($_POST['pass'])){
     $user = $_POST['user'];
     $pass = $_POST['pass'];
+    $pwd = hash('sha256', $pass);
 
-    $sql = "select * from usuarios where name='$user' && password='$pass'";
+    $sql = "select * from usuarios where name='$user' && password='$pwd'";
 
     $resultado = db::conexion()->query($sql);
 
