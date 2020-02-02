@@ -12,6 +12,7 @@ if(empty($_SESSION['usuario'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gesiline</title>
+    <link rel="shortcut icon" href="assets/images/ico.ico">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/datatables.min.css">
@@ -21,7 +22,10 @@ if(empty($_SESSION['usuario'])){
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/bootstrap-autocomplete.min.js"></script>
+    <script src="assets/js/bootstrap3-typeahead.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </head>
 <body>
 
@@ -59,8 +63,8 @@ if(empty($_SESSION['usuario'])){
           Incidencias
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Ver</a>
-          <a class="dropdown-item" href="#">Agregar</a>
+          <a class="dropdown-item" href="?p=verIncidencias">Ver</a>
+          <a class="dropdown-item" href="?p=agregarIncidencia">Agregar</a>
         </div>
       </li>
 

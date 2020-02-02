@@ -26,7 +26,9 @@
 
 
 </div>
-
+<div class="border-top text-center text-info">
+    <?=$fechas?>
+</div>
 
 <script>
 $("#boton_editar").click(function (e) { 

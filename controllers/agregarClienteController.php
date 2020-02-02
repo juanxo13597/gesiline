@@ -12,7 +12,7 @@ if(isset($_POST['nombre']) && isset($_POST['direccion']) && isset($_POST['telefo
     VALUES ('$nombre', '$direccion', '$telefono')";
 
     if (db::conexion()->query($sql) === TRUE) {
-        $respuesta = "<div class='alert alert-primary' role='alert'>
+        $respuesta = "<div class='alert alert-success' role='alert'>
         Cliente Guardado
       </div>";
     } else {

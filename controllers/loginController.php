@@ -14,11 +14,13 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 
         while($row = $resultado->fetch_assoc()){
             $role = $row['role'];
+            $id = $row['id'];
         }
 
         $_SESSION['usuario'] = $user;
         $_SESSION['pass'] = $pass;
         $_SESSION['role'] = $role;
+        $_SESSION['id'] = $id;
 
         header("location:../index.php");
 
