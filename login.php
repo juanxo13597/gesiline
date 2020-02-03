@@ -47,7 +47,7 @@ if(isset($_GET['e'])){
 </div>
 
 <div class="form-group">
-<input type="text" name="pass" class="form-control" placeholder="Clave" required>
+<input type="password" name="pass" class="form-control" placeholder="Clave" required>
 </div>
 
 <div class="form-group">

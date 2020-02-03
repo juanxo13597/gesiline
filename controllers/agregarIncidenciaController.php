@@ -1,6 +1,7 @@
 <?php
 require_once("models/agregarIncidenciaModel.php");
 
+$resultado = null;
 
 if(isset($_POST['guardar']) && isset($_POST['nombre']) && isset($_POST['tipo'])){
 
@@ -8,7 +9,6 @@ if(isset($_POST['guardar']) && isset($_POST['nombre']) && isset($_POST['tipo']))
     $tipo = $_POST['tipo'];
     $creador = $_SESSION['id'];
     $nombre = $_POST['nombre'];
-    $resultado = null;
 
     //obtener datos del cliente con ese nombre
     $sql = "SELECT * FROM clientes where nombre='$nombre'";
